@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/translucent_write"
+        android:padding="10dp">
+        <!--正名-->
+        <TextView
+            android:id="@+id/tv_disease_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/disease_name"
+            android:textColor="@color/darker_gray"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/return_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00000000"
+            android:src="@drawable/me_home" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/translucent_write"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <!--疾病简介-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/translucent_write"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disease_intro"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_disease_intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="简介内容"
+                    android:textColor="@color/darker_gray" />
+            </LinearLayout>
+
+            <!--疾病别名，部分，传染性，多发人群-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/translucent_write"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!--别名-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_alias"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_alias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="别名内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+
+                <!--部位-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_incidence_site"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_incidence_site"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="部位内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+                <!--传染性-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_contagious"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_contagious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="传染性内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+                <!--易发人群-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_multiple_people"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_multiple_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="易发人群内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+                <!--建议就诊科室-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_visit_department"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_visit_department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="建议就诊科室内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+                <!--治愈率-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_cure_rate"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_cure_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="治愈率内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--症状-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/translucent_write"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!--早期症状-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_symptom_early"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_symptom_early"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="早期症状内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+                <!--晚期症状-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_symptom_late"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disease_symptom_late"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="晚期症状内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--相关症状-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/translucent_write"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!--相关症状-->
+                <LinearLayout
+                    android:id="@+id/ll_disease_symptom_related"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_symptom_related"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!--相关症状介绍-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/disease_symptom_intro"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_disease_symptom_intro_detailed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detailed"
+                            android:textColor="@color/btn_clickable"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_disease_symptom_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxEms="150"
+                        android:maxLines="15"
+                        android:text="相关症状介绍内容"
+                        android:textColor="@color/darker_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--并发症-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/translucent_write"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!--并发症-->
+                <LinearLayout
+                    android:id="@+id/ll_complication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disease_complication"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <!--并发症介绍-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/disease_complication_intro"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_disease_complication_intro_detailed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detailed"
+                            android:textColor="@color/btn_clickable"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_disease_complication_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxEms="150"
+                        android:maxLines="15"
+                        android:text="并发症介绍内容"
+                        android:textColor="@color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

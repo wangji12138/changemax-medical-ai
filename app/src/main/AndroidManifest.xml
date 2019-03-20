@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wangji.changemax">
+
+    <!--语音系统权限-->
+    <!--连接网络权限，用于执行云端语音能力 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--外存储写权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!--配置权限，用来记录应用配置信息 -->
+    <!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 获取精确位置 GPS芯片接收卫星的定位信息,定位精度达10米以内 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取模拟定位信息 -->
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--桌面悬浮权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/change_max"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/change_max"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Qf7BsUdLvVlZPXpGaRn2j5iKqOrIURdg" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--引导页-->
+        <activity android:name=".activity.app_introduction.FirstBootActivity" />
+        <!--其他activity-->
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.admin.AdminActivity" />
+        <activity android:name=".activity.web.WebActivity" />
+        <activity android:name=".activity.map.MapActivity" />
+
+        <!--医疗百科-->
+
+        <activity
+            android:name=".activity.mea.MedicalEncyclopediaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--<activity android:name=".activity.mea.MedicalEncyclopediaActivity" />-->
+        <activity android:name=".activity.mea.detailed.MedicalDiseaseDetailedDataActivity" />
+        <activity android:name=".activity.mea.detailed.MedicalSymptomDetailedDataActivity" />
+
+        <activity android:name=".activity.intro.AppIntroActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+    </application>
+
+</manifest>

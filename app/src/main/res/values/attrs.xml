@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="wwv_WindowView">
+        <!-- May be any number (defined in microseconds), or one of the pre-defined enums. -->
+        <attr name="wwv_sensor_sampling_period" format="integer">
+            <!-- Maps to SensorManager#SENSOR_DELAY_FASTEST -->
+            <enum name="fast" value="0" />
+            <!-- Maps to SensorManager#SENSOR_DELAY_GAME -->
+            <enum name="normal" value="1" />
+            <!-- Maps to SensorManager#SENSOR_DELAY_UI -->
+            <enum name="slow" value="2" />
+        </attr>
+
+        <!-- All in degrees. -->
+        <attr name="wwv_max_pitch" format="float" />
+        <attr name="wwv_max_roll" format="float" />
+        <attr name="wwv_vertical_origin" format="float" />
+        <attr name="wwv_horizontal_origin" format="float" />
+
+        <attr name="wwv_tilt_sensor_mode" format="enum">
+            <enum name="Automatic" value="0" />
+            <enum name="Manual" value="1" />
+        </attr>
+
+        <attr name="wwv_orientation_mode" format="enum">
+            <enum name="Absolute" value="0" />
+            <enum name="Relative" value="1" />
+        </attr>
+
+        <attr name="wwv_translate_mode" format="enum">
+            <enum name="Constant" value="0" />
+            <enum name="Proportional" value="1" />
+        </attr>
+
+        <attr name="wwv_max_constant_translation" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="InkPageIndicator">
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotGap" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="pageIndicatorColor" format="color" />
+        <attr name="currentPageIndicatorColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxLayout_Layout">
+        <attr name="layout_parallaxFactor" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension" />
+        <attr name="ci_margin" format="dimension" />
+        <attr name="ci_background" format="color|integer" />
+        <attr name="ci_selected_background" format="color|integer" />
+        <attr name="ci_gravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0" />
+            <enum name="outside" value="1" />
+            <enum name="solo" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StickySwitch">
+        <attr name="ss_leftIcon" format="reference|integer" />
+        <attr name="ss_leftText" format="reference|string" />
+        <attr name="ss_rightIcon" format="reference|integer" />
+        <attr name="ss_rightText" format="reference|string" />
+        <attr name="ss_iconSize" format="reference|dimension" />
+        <attr name="ss_iconPadding" format="reference|dimension" />
+        <attr name="ss_textSize" format="reference|dimension" />
+        <attr name="ss_selectedTextSize" format="reference|dimension" />
+        <attr name="ss_switchColor" format="reference|color" />
+        <attr name="ss_sliderBackgroundColor" format="reference|color" />
+        <attr name="ss_textColor" format="reference|color" />
+        <attr name="ss_animationDuration" format="reference|integer" />
+
+        <attr name="ss_animationType" format="enum">
+            <enum name="line" value="0" />
+            <enum name="curved" value="1" />
+        </attr>
+        <attr name="ss_textVisibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

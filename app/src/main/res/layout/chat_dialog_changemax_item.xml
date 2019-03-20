@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_chat_changemax_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="top"
+        android:src="@drawable/change_max_yuan" />
+
+    <!--消息内容-->
+    <TextView
+        android:id="@+id/tv_chat_changemax_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/iv_chat_changemax_icon"
+        android:background="@drawable/shape_changemax_tv"
+        android:padding="8dp"
+        android:text="我没说话！"
+        android:textColor="#4F4F4F" />
+
+
+</LinearLayout>

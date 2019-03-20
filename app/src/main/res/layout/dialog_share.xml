@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_black_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <!--图片-->
+            <ImageView
+                android:id="@+id/iv_building_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/change_max_yuan" />
+            <!--名称及简介-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="120dp">
+
+                <Button
+                    android:id="@+id/btn_building_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:background="#00000000"
+                    android:text="建筑名称"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+                <!--简介-->
+                <LinearLayout
+                    android:id="@+id/ll_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btn_building_name">
+
+                    <TextView
+                        android:id="@+id/tv_building_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="7"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_building_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/ll_intro"
+                    android:layout_marginStart="100dp"
+                    android:background="#00000000"
+                    android:text="【导航】"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corner_black_bg"
+        android:text="取消"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

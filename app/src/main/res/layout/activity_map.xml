@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangji.changemax.activity.map.MapActivity"
+    tools:ignore="MergeRootFrame">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/et_around"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="搜索的关键字"
+        android:text="医院" />
+
+    <Button
+        android:id="@+id/btn_cur_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_map_btn"
+        android:text="我的位置"
+        android:textColor="#F8F8FF" />
+
+    <Button
+        android:id="@+id/btn_range_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="范围搜索" />
+
+    <Button
+        android:id="@+id/btn_center_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="圆心的周边检索" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/et_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="输入起点位置" />
+
+        <Button
+            android:id="@+id/btn_walk_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步行路线" />
+
+        <Button
+            android:id="@+id/btn_drive_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="驾车路线" />
+
+    </LinearLayout>
+
+</RelativeLayout>

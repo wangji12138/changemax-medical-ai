@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:background="#00000000"
+    android:clickable="false"
+    android:ellipsize="end"
+    android:singleLine="true"
+    android:text=""
+    android:textColor="@color/btn_clickable"
+    android:textSize="15dp" />

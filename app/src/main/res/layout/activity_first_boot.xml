@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.app_introduction.FirstBootActivity"
+    android:id="@+id/activity_first_boot">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.example.wangji.changemax.activity.app_introduction.widget.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/viewpager"
+        android:layout_centerHorizontal="true"
+        CircleIndicator:ci_background="@android:color/white"
+        CircleIndicator:ci_gravity="center"
+        CircleIndicator:ci_margin="5dp"
+        CircleIndicator:ci_mode="outside"
+        CircleIndicator:ci_radius="10dp"
+        CircleIndicator:ci_selected_background="0xffe6454a" />
+</RelativeLayout>

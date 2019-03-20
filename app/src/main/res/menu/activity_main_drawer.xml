@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bw_toubu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_toubu" />
+        <item
+            android:id="@+id/bw_jingbu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_jingbu" />
+        <item
+            android:id="@+id/bw_xiongbu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_xiongbu" />
+        <item
+            android:id="@+id/bw_fubu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_fubu" />
+        <item
+            android:id="@+id/bw_yaobu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_yaobu" />
+        <item
+            android:id="@+id/bw_huiyinbu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_huiyinbu" />
+        <item
+            android:id="@+id/bw_nanxsz"
+            android:icon="@drawable/item"
+            android:title="@string/bw_nanxsz" />
+        <item
+            android:id="@+id/bw_nvxsz"
+            android:icon="@drawable/item"
+            android:title="@string/bw_nvxsz" />
+        <item
+            android:id="@+id/bw_quanshen"
+            android:icon="@drawable/item"
+            android:title="@string/bw_quanshen" />
+        <item
+            android:id="@+id/bw_shangzhi"
+            android:icon="@drawable/item"
+            android:title="@string/bw_shangzhi" />
+        <item
+            android:id="@+id/bw_xiazhi"
+            android:icon="@drawable/item"
+            android:title="@string/bw_xiazhi" />
+        <item
+            android:id="@+id/bw_penqiang"
+            android:icon="@drawable/item"
+            android:title="@string/bw_penqiang" />
+        <item
+            android:id="@+id/bw_tunbu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_tunbu" />
+        <item
+            android:id="@+id/bw_gu"
+            android:icon="@drawable/item"
+            android:title="@string/bw_gu" />
+        <item
+            android:id="@+id/bw_xinli"
+            android:icon="@drawable/item"
+            android:title="@string/bw_xinli" />
+        <item
+            android:id="@+id/bw_qita"
+            android:icon="@drawable/item"
+            android:title="@string/bw_qita" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

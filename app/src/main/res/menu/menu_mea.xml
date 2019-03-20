@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.mea.MedicalEncyclopediaActivity">
+    <item
+        android:id="@+id/action_cart"
+        android:title=""
+        android:actionLayout="@layout/return_main"
+        android:orderInCategory="100"
+        android:showAsAction="never"/>
+
+</menu>
