@@ -10,3 +10,4 @@ changeMax医疗健康助手（以下简称为：医疗助手）是一个在andro
 
 项目内测平台：https://fir.im/changemax
 
+具体技术实现方案看另外一文件
