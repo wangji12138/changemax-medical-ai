@@ -10,4 +10,14 @@ changeMax医疗健康助手（以下简称为：医疗助手）是一个在andro
 
 项目内测平台：https://fir.im/changemax
 
-具体技术实现方案看另外一文件
+具体技术实现方案看File文件夹内文档
+
+注：本项目由本人独立开发，完成，禁止用于商业用途，以及用于各种据为己有的途径，前提需和本人进行授权联系，需本人许可后进行使用，目前供学习参考
+
+本人联系方式：
+    QQ：1451388723
+    email：changemaxwj@163.com
+    CSDN：https://blog.csdn.net/qq_40223688
+    个人网站：www.changemax.cn
+    
+    欢迎各位和我一起交流
